@@ -1,21 +1,20 @@
-#下一代打包工具rollup
-[toc]
+# 下一代打包工具rollup
 
-##roolup是什么：
+## roolup是什么：
 Rollup是一个 JavaScript 模块打包器,它采用一个据称为`tree shaking`的技术，Tree shaking，即是指消除JavaScript上下文中无用代码，或更精确地说，只保留有用的代码。利用es6模块能静态分析语法树的特性，只将需要的代码提取出来打包，能大大减小代码体积。
 
 
-##为什么要用rollup：
+## 为什么要用rollup：
 
 - Rollup 可以打出更快更小的包,尽可能的压缩，减少文件大小
 - 只导出有用的代码,去掉没用到的代码
 - Rollup的语法比Webpack更加简单，文档教程比Webpack更加循序渐进
 
-##同类型工具（预编译模块方案）：
+## 同类型工具（预编译模块方案）：
 webpack、browserify 
 
 
-##怎么用：
+## 怎么用：
 ### 1.创建package.json文件
  package.json配置-[项目模板](https://github.com/rollup/rollup-starter-project/blob/master/package.json)
 每个项目的根目录下面，一般都有一个package.json文件，定义了这个项目所需要的各种模块，以及项目的配置信息（比如名称、版本、许可证等元数据）。npm install命令根据这个配置文件，自动下载所需的模块，也就是配置项目所需的运行和开发环境。
